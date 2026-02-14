@@ -12,6 +12,7 @@ export default function Index() {
       router.replace("/musicInfo")
     }, 1500)
   }, [])
+  
 
   return (
     <View style={styles.background}>

@@ -10,7 +10,8 @@ const Typo = ({
   children,
   fontFamily = "outfit", 
   style,
-  textProps = {}
+  textProps = {}, 
+  ...props
 }: TypeProps) => {
 
   const textStyle: TextStyle = {
@@ -21,7 +22,7 @@ const Typo = ({
   }
 
   return (
-    <Text style={[textStyle, style]} {...textProps} >
+    <Text style={[textStyle, style]} {...textProps} {...props} >
         {children}
     </Text>
   )
